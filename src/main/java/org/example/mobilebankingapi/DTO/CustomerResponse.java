@@ -1,4 +1,16 @@
 package org.example.mobilebankingapi.DTO;
 
-public record CostomerRespone() {
-}
+import lombok.Builder;
+
+@Builder
+public record CustomerResponse(
+        String fullName,
+        String gender,
+        String phoneNumber,
+        String email,
+        String remarks,
+        Integer nationalCardId,
+        String segment,
+        boolean verified
+) {}
+

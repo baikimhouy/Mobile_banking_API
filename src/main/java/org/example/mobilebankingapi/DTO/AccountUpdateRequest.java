@@ -1,4 +1,9 @@
 package org.example.mobilebankingapi.DTO;
 
-public record AccountUpdateRequest() {
+import java.math.BigDecimal;
+
+public record AccountUpdateRequest(
+        BigDecimal balance,
+        String currency
+) {
 }
