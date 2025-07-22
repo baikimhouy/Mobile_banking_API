@@ -19,11 +19,11 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne //many transaction can has same transaction type
+    @ManyToOne //many transaction has same transaction type
     @JoinColumn(name = "transaction_type_id", nullable = false)
     private TransactionType transactionType;
 
-    @ManyToOne //many transaxction has one sender acc
+    @ManyToOne //many transaction has one sender acc
     @JoinColumn(name = "sender_account_id", nullable = false)
     private Account sender;
 

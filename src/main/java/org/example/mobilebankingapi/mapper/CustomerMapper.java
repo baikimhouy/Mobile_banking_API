@@ -19,7 +19,6 @@ public interface CustomerMapper {
     @Mapping(target = "nationalCardId", source = "kyc.nationalCardId")
     @Mapping(target = "segment", source = "kyc.segment")
     @Mapping(target = "verified", source = "kyc.verified")
-    @Mapping(target = "remarks", source = "remarks") // Optional if names match
     CustomerResponse fromCustomer(Customer customer);
 
     Customer toCustomer(CreateCustomerRequest request);

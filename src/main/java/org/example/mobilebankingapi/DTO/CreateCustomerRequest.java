@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 
 public record CreateCustomerRequest(
-        @NotBlank(message = "Full name is required")
+        @NotBlank
         String fullName,
 
         @Pattern(regexp = "Male|Female", message = "Gender must be Male or Female")
