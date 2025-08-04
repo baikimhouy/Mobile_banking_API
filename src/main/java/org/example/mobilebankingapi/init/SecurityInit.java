@@ -22,6 +22,7 @@ public class SecurityInit {
 
     @PostConstruct
     public void init() {
+
         Role defaultRole = new Role();
         defaultRole.setRole("USER");
         Role admin = new Role();
